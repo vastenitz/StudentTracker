@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "646270903654",
+    "firebase_url": "https://studenttracker-fa727.firebaseio.com",
+    "project_id": "studenttracker-fa727",
+    "storage_bucket": "studenttracker-fa727.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646270903654:android:eca1d4f060534a172094a7",
+        "android_client_info": {
+          "package_name": "com.sourcey.materialloginexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646270903654-421rg6jdsdrcfs1pcviotl8spumb5p3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourcey.materialloginexample",
+            "certificate_hash": "fc14452a29bff7665d481472ae704546fb6624b2"
+          }
+        },
+        {
+          "client_id": "646270903654-mcfk6b3k60cq2b9kspti4n5sk04r3vdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSEq9CSjx6lJ-1YGlINOxGmbvsaHYnAD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646270903654-mcfk6b3k60cq2b9kspti4n5sk04r3vdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

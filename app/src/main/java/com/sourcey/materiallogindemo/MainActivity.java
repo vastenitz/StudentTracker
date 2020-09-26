@@ -1,11 +1,7 @@
 package com.sourcey.materiallogindemo;
 
 import android.os.Bundle;
-import android.view.MenuItem;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -33,20 +29,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.navigation_profile:
-                            openFragment(ProfileFragment.newInstance());
-                            return true;
-                        case R.id.navigation_calendar:
-                            openFragment(CalendarFragment.newInstance());
-                            return true;
-                        case R.id.navigation_history:
-                            openFragment(HistoryFragment.newInstance());
-                            return true;
-                    }
-                    return false;
+            item -> {
+                switch (item.getItemId()) {
+                    case R.id.navigation_profile:
+                        openFragment(ProfileFragment.newInstance());
+                        return true;
+                    case R.id.navigation_calendar:
+                        openFragment(CalendarFragment.newInstance());
+                        return true;
+                    case R.id.navigation_history:
+                        openFragment(HistoryFragment.newInstance());
+                        return true;
                 }
+                return false;
             };
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
